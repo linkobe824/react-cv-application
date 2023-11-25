@@ -1,0 +1,50 @@
+.sidebar {
+  flex: 25%;
+  max-width: 300px;
+  min-width: 250px;
+  height: 100%;
+  background-color: #445069;
+  color: #f5f5f5;
+}
+
+.logo {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.list {
+  margin-top: 4rem;
+}
+
+.list .row {
+  display: flex;
+  background-color: #818fb4;
+  padding: 1rem 1rem;
+  margin: 0.2rem 0;
+}
+
+.list .row:hover {
+  background-color: #1f4172;
+  cursor: pointer;
+}
+
+.list #icon {
+  flex: 25%;
+  display: grid;
+  align-items: center;
+}
+
+.list #title {
+  flex: 75%;
+  display: grid;
+  align-items: center;
+}
+/* 1F4172 color hover de elemento en lista
+F5F5F5 color de letra */
