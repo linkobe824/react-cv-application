@@ -1,0 +1,20 @@
+.container {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.container button {
+  padding: 0.5rem 0.7rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  border-style: none;
+  box-shadow: 1px 0.5px 6px rgba(0, 0, 0, 0.199);
+  background-color: rgb(11, 179, 20);
+}
+
+.container button:hover {
+  background-color: rgb(13, 148, 20);
+}

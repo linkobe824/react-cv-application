@@ -1,12 +1,12 @@
 import './App.css'
 import Sidebar from './components/Sidebar'
-import Home from './pages/Home'
+import Switch from './components/Switch'
 
 function App() {
   return (
     <div className='flex-container'>
       <Sidebar />
-      <Home />
+      <Switch component={window.location.pathname} />
     </div>
   )
 }

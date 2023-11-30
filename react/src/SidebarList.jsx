@@ -1,4 +1,4 @@
-import PersonIcon from '@mui/icons-material/Person'
+// import PersonIcon from '@mui/icons-material/Person'
 import ContactMailIcon from '@mui/icons-material/ContactMail'
 import SchoolIcon from '@mui/icons-material/School'
 import WorkIcon from '@mui/icons-material/Work'
@@ -12,13 +12,8 @@ export const SidebarList = [
   },
   {
     title: 'Personal Information',
-    icon: <PersonIcon />,
-    ref: '/personal-info',
-  },
-  {
-    title: 'Contact',
     icon: <ContactMailIcon />,
-    ref: '/contact',
+    ref: '/personal-info',
   },
   {
     title: 'Academic',
