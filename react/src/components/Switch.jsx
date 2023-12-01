@@ -31,6 +31,7 @@ function Switch({ component }) {
       break
     case '/resume':
       Component = Resume
+      componentProps = { personalInfo }
       break
     default:
       Component = Home
