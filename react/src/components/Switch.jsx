@@ -6,17 +6,25 @@ import Experience from '../pages/Experience.jsx'
 import { useState } from 'react'
 
 function Switch({ component }) {
-  const [personalInfo, setPersonalInfo] = useState({})
+  const [personalInfo, setPersonalInfo] = useState({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phoneNumber: '',
+    address: '',
+  })
   const [academicInfo, setAcademicInfo] = useState([])
   const [experience, setExperience] = useState([])
 
   let Component
+  let componentProps
   switch (component) {
     case '/academic':
       Component = Academic
       break
     case '/personal-info':
       Component = Personal
+      componentProps = { personalInfo, setPersonalInfo }
       break
     case '/experience':
       Component = Experience
@@ -29,9 +37,23 @@ function Switch({ component }) {
       break
   }
 
+  function handleStateUpdate(e, attribute = null, page) {
+    switch (page) {
+      case 'personal':
+        setPersonalInfo((prevPeresonalInfo) => ({
+          ...prevPeresonalInfo,
+          [attribute]: e.target.value,
+        }))
+        break
+    }
+  }
+
   return (
     <div>
-      <Component />
+      <Component
+        {...componentProps}
+        handleInputChange={handleStateUpdate}
+      />
     </div>
   )
 }

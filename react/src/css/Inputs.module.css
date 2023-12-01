@@ -1,34 +1,20 @@
 .pairInputContainer {
   display: flex;
   gap: 0.5rem;
+}
+
+.inputContainer {
   padding: 0.5rem;
 }
 
-.pairInputContainer label {
+.inputContainer label {
   display: block;
   font-size: 0.9rem;
   font-weight: bold;
   margin-bottom: 0.1rem;
 }
 
-.pairInputContainer input {
-  padding: 0.5rem 0.5rem;
-  border-radius: 5px;
-  box-shadow: 1px 0.5px 6px rgba(0, 0, 0, 0.199);
-}
-
-.onlyInput {
-  padding: 0.5rem;
-}
-
-.onlyInput label {
-  display: block;
-  font-size: 0.9rem;
-  font-weight: bold;
-  margin-bottom: 0.1rem;
-}
-
-.onlyInput input {
+.inputContainer input {
   width: 100%;
   padding: 0.5rem 0.5rem;
   border-radius: 5px;

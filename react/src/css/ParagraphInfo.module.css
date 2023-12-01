@@ -1,0 +1,8 @@
+.container {
+  margin: 0.5rem;
+}
+
+.container span {
+  margin-left: 0.5rem;
+  font-weight: 300;
+}

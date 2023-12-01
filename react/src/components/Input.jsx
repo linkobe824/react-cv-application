@@ -1,8 +1,13 @@
-export default function Input({ label, ...props }) {
+import classes from '../css/Inputs.module.css'
+
+export default function Input({ label, handleChange, ...props }) {
   return (
-    <p>
+    <p className={classes.inputContainer}>
       <label htmlFor={props.id}>{label}</label>
-      <input {...props} />
+      <input
+        {...props}
+        onChange={(e) => handleChange(e, props.name, props.page)}
+      />
     </p>
   )
 }
